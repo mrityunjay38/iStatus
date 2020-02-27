@@ -1,0 +1,27 @@
+{
+  "name": "iStatus",
+  "version": "1.0.0",
+  "description": "A plugin to beautify internet status alert.",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrityunjay38/iStatus.git"
+  },
+  "keywords": [
+    "internet status",
+    "plugin",
+    "check internet"
+  ],
+  "author": "Mrityunjay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrityunjay38/iStatus/issues"
+  },
+  "homepage": "https://github.com/mrityunjay38/iStatus#readme",
+  "devDependencies": {
+    "webpack": "^4.41.6"
+  }
+}
