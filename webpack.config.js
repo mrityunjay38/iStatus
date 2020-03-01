@@ -1,7 +1,8 @@
-import path from "path";
+const path  = require('path');
 
 module.exports = {
-    entry: 'src/app.js',
+    mode: 'development',
+    entry: ['babel-polyfill','./src/app.js'],
     output: {
         filename: 'engine.js',
         path: path.resolve(__dirname, 'build')
@@ -15,13 +16,13 @@ module.exports = {
             use: 'eslint-loader'
         },
         {
-            test: /\.js$/,
+            test: /\.m?js$/,
             exclude: /node_modules/,
             use: {
                 "loader": "babel-loader",
                 "options": {
                     "presets": [
-                        "env"
+                        "@babel/preset-env"
                     ]
                 }
             }
