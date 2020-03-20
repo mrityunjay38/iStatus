@@ -8,4 +8,4 @@ const beacon = () => {
     });
 }
 
-module.exports = beacon;
+export default beacon;

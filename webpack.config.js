@@ -4,8 +4,11 @@ module.exports = {
     mode: 'development',
     entry: ['babel-polyfill','./src/app.js'],
     output: {
-        filename: 'engine.js',
-        path: path.resolve(__dirname, 'build')
+        filename: 'iStatus.js',
+        path: path.resolve(__dirname, 'build'),
+        libraryTarget: 'umd',
+        library: 'iStatus',
+        globalObject: 'typeof self !== \'undefined\' ? self : this'
     },
     // Eslint loader
     module: {
