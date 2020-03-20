@@ -1,0 +1,46 @@
+/* Light and Dark theme */
+
+.light {
+  background: white;
+  color: darkslategrey;
+}
+
+.dark {
+  background: #161625;
+  color: white;
+}
+
+/* Themes */
+
+.basic .container {
+  display: flex;
+  max-width: 15em;
+  max-height: 5em;
+  min-height: 4em;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 5px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.034),
+    1px 12px 10px rgba(0, 0, 0, 0.048), 1px 3px 5px rgba(0, 0, 0, 0.034);
+  font-size: calc(0.6em + 1vw);
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.basic .status {
+  max-width: 20%;
+  min-width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.basic .message {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
