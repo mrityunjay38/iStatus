@@ -7,7 +7,6 @@ module.exports = {
         filename: 'iStatus.js',
         path: path.resolve(__dirname, 'build'),
         libraryTarget: 'umd',
-        library: 'iStatus',
         globalObject: 'typeof self !== \'undefined\' ? self : this'
     },
     // Eslint loader

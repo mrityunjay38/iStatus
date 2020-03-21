@@ -5,8 +5,8 @@
   "main": "build/iStatus.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "npm run build & npm run build & webpack-dev-server",
+    "build": "webpack -p",
+    "start": "npm run build & npm run watch & webpack-dev-server",
     "watch": "webpack --watch"
   },
   "repository": {
