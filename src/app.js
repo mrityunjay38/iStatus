@@ -1,19 +1,16 @@
 import Beacon from './modules/beacon';
 import Template from './modules/template'
 
-const iStatus = async () => {
+export const iStatus = async (theme='basic',mode='light') => {
     try{
         const res = await Beacon();
         console.log(res);
         if(res === 'Connected'){
-            console.log('Hii');
-            const template = Template('basic');
-            console.log(template);
+            const template = Template(theme,mode);
+            document.body.appendChild(template);
         }
     }
     catch(err){
         console.log(err);
     }
 }
-
-export default iStatus;

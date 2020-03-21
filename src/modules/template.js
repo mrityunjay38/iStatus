@@ -1,3 +1,5 @@
+import '../css/stylesheet.scss';
+
 const generateTemplate = (layout,mode) => {
     const theme = document.createElement('div');
     theme.className = layout;
@@ -26,8 +28,8 @@ const generateTemplate = (layout,mode) => {
     return theme;
 }
 
-const template = (option,mode='light') => {
-    const selectedTemplate = null;
+const template = (option,mode) => {
+    let selectedTemplate = null;
 
     if(typeof(option) === 'string'){
         selectedTemplate = generateTemplate(option,mode);
@@ -35,7 +37,6 @@ const template = (option,mode='light') => {
     else {
         selectedTemplate = generateTemplate(option.theme);
     }
-
     return selectedTemplate;
 }
 
