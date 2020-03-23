@@ -1,16 +1,32 @@
-import Beacon from './modules/beacon';
-import Template from './modules/template'
+import beacon from './modules/beacon';
+import themeConfig from './themeConfig.json';
+import popUpAlert from './utils/popUpAlert';
 
-export const iStatus = async (theme='basic',mode='light') => {
-    try{
-        const res = await Beacon();
-        console.log(res);
-        if(res === 'Connected'){
-            const template = Template(theme,mode);
-            document.body.appendChild(template);
+// let lastPopUp = null;
+
+// const popUpAlert = (config,status) => {
+//     if(status === 'disconnected'){
+//         const alert = template(config,status);
+//         document.body.appendChild(alert);
+//         lastPopUp = status;    
+//         deleteAlert();    
+//     }
+//     else if(status === 'connected' && lastPopUp === 'disconnected'){
+//         const alert = template(config,status);
+//         document.body.appendChild(alert);
+//         lastPopUp = status;
+//         deleteAlert();
+//     }
+// }
+
+export const iStatus = (config=themeConfig.basic) => {
+    setInterval( async () => {
+        try{
+            const res = await beacon();
+            popUpAlert(config,res);
         }
-    }
-    catch(err){
-        console.log(err);
-    }
+        catch(err){
+            popUpAlert(config,err);
+        }
+    },config.timeout * 1000);
 }
