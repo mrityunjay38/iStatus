@@ -1,42 +1,48 @@
 import '../css/stylesheet.scss';
 
-const generateTemplate = (layout,mode) => {
+const generateTemplate = (config,status) => {
     const theme = document.createElement('div');
-    theme.className = layout;
+    theme.id = 'iStatus';
+    theme.className = config.theme + ' ' + config.mode;
 
     const container = document.createElement('div');
-    container.className = 'container ' + mode;
+    container.className = 'container';
 
-    const status = document.createElement('div');
-    status.className = 'status';
+    const warning = document.createElement('div');
+    warning.className = 'warning';
 
-    const image = document.createElement('img');
-    image.src = 'https://www.google.com/favicon.ico';
+    if('icon' in config){
+        const warningIcon = document.createElement('i');
+        warningIcon.className = status === 'connected' ? config.icon.connected : config.icon.disconnected;
+        warning.appendChild(warningIcon);
+    }
+    else{
+        const warningImage = document.createElement('img');
+        warningImage.src = status === 'connected' ? config.img.connected : config.img.disconnected;
+        warning.appendChild(warningImage);
+    }
 
     const message = document.createElement('div');
     message.className = 'message';
 
     const text = document.createElement('p');
-    text.innerHTML = 'Connection lost';
+    text.innerHTML = status === 'connected' ? config.message.connected : config.message.disconnected;
 
-    theme.appendChild(container);
-    container.appendChild(status);
-    container.appendChild(message);
-    status.appendChild(image);
     message.appendChild(text);
+    container.appendChild(warning);
+    container.appendChild(message);
+    theme.appendChild(container);
 
     return theme;
 }
 
-const template = (option,mode) => {
+const template = (config,status) => {
     let selectedTemplate = null;
 
-    if(typeof(option) === 'string'){
-        selectedTemplate = generateTemplate(option,mode);
+    if(typeof config === 'object'){
+        selectedTemplate = generateTemplate(config,status);
     }
-    else {
-        selectedTemplate = generateTemplate(option.theme);
-    }
+
     return selectedTemplate;
 }
 

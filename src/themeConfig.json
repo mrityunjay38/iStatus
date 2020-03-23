@@ -1,0 +1,15 @@
+{
+  "basic": {
+    "theme" : "basic",
+    "mode": "light",
+    "img": {
+      "connected": "https://www.google.com/favicon.ico",
+      "disconnected": "https://www.google.com/favicon.ico"
+    },
+    "message": {
+      "connected": "Internet connected",
+      "disconnected": "Internet disconnected"
+    },
+    "timeout" : "30"
+  }
+}
