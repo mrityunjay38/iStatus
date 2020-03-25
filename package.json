@@ -40,7 +40,5 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
   },
-  "dependencies": {
-    "sweetalert": "^2.1.2"
-  }
+  "dependencies": {}
 }
