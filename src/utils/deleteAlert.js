@@ -1,8 +1,11 @@
-const deleteAlert = () => {
+import lastPopUp from './lastPopUp.json';
+
+const deleteAlert = (deleteAfter=0) => {
     setTimeout(() => {
         const alert = document.getElementById('iStatus');
         alert.remove();
-    },5000);
+        lastPopUp.alert = null;
+    }, deleteAfter * 1000);
 }
 
 export default deleteAlert;
