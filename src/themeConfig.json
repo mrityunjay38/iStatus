@@ -1,15 +1,17 @@
 {
   "basic": {
     "theme" : "basic",
-    "mode": "light",
-    "img": {
-      "connected": "https://www.google.com/favicon.ico",
-      "disconnected": "https://www.google.com/favicon.ico"
+    "mode" : "light",
+    "icon" : {
+      "connected": "check",
+      "disconnected": "cross"
     },
-    "message": {
-      "connected": "Internet connected",
-      "disconnected": "Internet disconnected"
+    "message" : {
+      "connected" : "Internet connected",
+      "disconnected" : "Internet disconnected"
     },
-    "timeout" : "30"
+    "runEvery" : 10,
+    "deleteAfter" : 10,
+    "position" : "bottomLeft"
   }
 }

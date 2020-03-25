@@ -1,23 +1,7 @@
 import beacon from './modules/beacon';
 import themeConfig from './themeConfig.json';
 import popUpAlert from './utils/popUpAlert';
-
-// let lastPopUp = null;
-
-// const popUpAlert = (config,status) => {
-//     if(status === 'disconnected'){
-//         const alert = template(config,status);
-//         document.body.appendChild(alert);
-//         lastPopUp = status;    
-//         deleteAlert();    
-//     }
-//     else if(status === 'connected' && lastPopUp === 'disconnected'){
-//         const alert = template(config,status);
-//         document.body.appendChild(alert);
-//         lastPopUp = status;
-//         deleteAlert();
-//     }
-// }
+import lastPopUp from './utils/lastPopUp.json';
 
 export const iStatus = (config=themeConfig.basic) => {
     setInterval( async () => {
@@ -28,5 +12,5 @@ export const iStatus = (config=themeConfig.basic) => {
         catch(err){
             popUpAlert(config,err);
         }
-    },config.timeout * 1000);
+    },config.runEvery * 1000);
 }
