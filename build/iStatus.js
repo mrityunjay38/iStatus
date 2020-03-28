@@ -3937,7 +3937,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _uti
 /*! exports provided: basic, default */
 /***/ (function(module) {
 
-eval("module.exports = JSON.parse(\"{\\\"basic\\\":{\\\"theme\\\":\\\"basic\\\",\\\"mode\\\":\\\"light\\\",\\\"icon\\\":{\\\"connected\\\":\\\"check\\\",\\\"disconnected\\\":\\\"cross\\\"},\\\"message\\\":{\\\"connected\\\":\\\"Internet connected\\\",\\\"disconnected\\\":\\\"Internet disconnected\\\"},\\\"runEvery\\\":10,\\\"deleteAfter\\\":10,\\\"position\\\":\\\"bottomLeft\\\"}}\");\n\n//# sourceURL=webpack://iStatus/./src/themeConfig.json?");
+eval("module.exports = JSON.parse(\"{\\\"basic\\\":{\\\"theme\\\":\\\"basic\\\",\\\"mode\\\":\\\"light\\\",\\\"icon\\\":{\\\"connected\\\":\\\"check\\\",\\\"disconnected\\\":\\\"cross\\\"},\\\"message\\\":{\\\"connected\\\":\\\"Internet connected\\\",\\\"disconnected\\\":\\\"Internet disconnected\\\"},\\\"runEvery\\\":30,\\\"deleteAfter\\\":10,\\\"position\\\":\\\"bottomLeft\\\"}}\");\n\n//# sourceURL=webpack://iStatus/./src/themeConfig.json?");
 
 /***/ }),
 
