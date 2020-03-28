@@ -3,8 +3,7 @@
     <img src="https://raw.githubusercontent.com/mrityunjay38/iStatus/master/assets/iStatus-logo.png">
   </a>
 </div>
-
-A plugin to beautify internet status alert.
+<p align="center">A plugin to beautify internet status alert.</p>
 
 ## Installation
 ```bash
