@@ -1,13 +1,17 @@
-import Beacon from './modules/beacon.js';
+import beacon from './modules/beacon';
+import themeConfig from './themeConfig.json';
+import popUpAlert from './utils/popUpAlert';
 
-const iStatus = async () => {
-    try{
-        const res = await Beacon();
-        console.log(res);
-    }
-    catch(err){
-        console.log(err);
-    }
+const iStatus = (config=themeConfig.basic) => {
+    setInterval( async () => {
+        try{
+            const res = await beacon();
+            popUpAlert(config,res);
+        }
+        catch(err){
+            popUpAlert(config,err);
+        }
+    },config.runEvery * 1000);
 }
 
-module.exports = iStatus;
+export default iStatus;

@@ -1,0 +1,17 @@
+{
+  "basic": {
+    "theme" : "basic",
+    "mode" : "light",
+    "icon" : {
+      "connected": "check",
+      "disconnected": "cross"
+    },
+    "message" : {
+      "connected" : "Internet connected",
+      "disconnected" : "Internet disconnected"
+    },
+    "runEvery" : 10,
+    "deleteAfter" : 10,
+    "position" : "bottomLeft"
+  }
+}
