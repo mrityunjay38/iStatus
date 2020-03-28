@@ -10,7 +10,7 @@
       "connected" : "Internet connected",
       "disconnected" : "Internet disconnected"
     },
-    "runEvery" : 10,
+    "runEvery" : 30,
     "deleteAfter" : 10,
     "position" : "bottomLeft"
   }
