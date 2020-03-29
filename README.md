@@ -26,7 +26,7 @@ iStatus();
 
 ### CommonJs
 ```javascript
-const iStatus = require('iStatus);
+const iStatus = require('iStatus');
 
 iStatus();
 ```
