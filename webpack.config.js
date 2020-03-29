@@ -1,10 +1,10 @@
 const path  = require('path');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: ['babel-polyfill','./src/app.js'],
     output: {
-        filename: 'iStatus.js',
+        filename: 'istatus.min.js',
         path: path.resolve(__dirname, 'build'),
         library: 'iStatus',
         libraryExport: 'default',

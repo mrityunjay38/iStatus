@@ -9,11 +9,6 @@
 ```bash
 npm install iStatus --save
 ```
-or use CDN
-
-```javascript
-<script src="">
-```
 
 ## Usage
 
@@ -26,7 +21,7 @@ iStatus();
 
 ### CommonJs
 ```javascript
-const iStatus = require('iStatus);
+const iStatus = require('iStatus');
 
 iStatus();
 ```
