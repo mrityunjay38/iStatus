@@ -28,7 +28,7 @@ yarn add istatus
 or use CDN
 
 ```javascript
-<script src="https://cdn.jsdelivr.net/npm/istatus@1.0.2/build/istatus.min.js">
+<script src="https://cdn.jsdelivr.net/npm/istatus@1.0.5/build/istatus.min.js">
 ```
 
 ## Usage
@@ -49,7 +49,7 @@ iStatus();
 
 ### Browsers
 ```javascript
-<script src='https://cdn.jsdelivr.net/npm/istatus@1.0.2/build/istatus.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/istatus@1.0.5/build/istatus.min.js'></script>
 
 <script>
     window.onload = function () {
