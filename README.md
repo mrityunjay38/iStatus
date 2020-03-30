@@ -5,14 +5,26 @@
 </div>
 <p align="center">A plugin to beautify internet status alert.</p>
 
+<div align="center">
+<a href="https://www.npmjs.com/package/istatus"><img src="https://img.shields.io/npm/v/istatus.svg" alt="npm istatus version"></a>
+<a href="https://www.jsdelivr.com/package/npm/istatus"><img src="https://data.jsdelivr.com/v1/package/npm/istatus/badge" alt="jsdelivr downloads"></a>
+<a href="https://github.com/mrityunjay38/iStatus/blob/master/LICENSE"><img src="https://img.shields.io/github/license/mrityunjay38/istatus.svg" alt="license mit"></a>
+</div>
+
 ## Installation
 ```bash
-npm install iStatus --save
+npm install istatus --save
 ```
+or
+
+```bash
+yarn add istatus
+```
+
 or use CDN
 
 ```javascript
-<script src="">
+<script src="https://cdn.jsdelivr.net/npm/istatus@1.0.2/build/istatus.min.js">
 ```
 
 ## Usage
@@ -33,7 +45,7 @@ iStatus();
 
 ### Browsers
 ```javascript
-<script src='iStatus.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/istatus@1.0.2/build/istatus.min.js'></script>
 
 <script>
     window.onload = function () {
