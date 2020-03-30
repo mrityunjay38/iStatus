@@ -11,6 +11,10 @@
 <a href="https://github.com/mrityunjay38/iStatus/blob/master/LICENSE"><img src="https://img.shields.io/github/license/mrityunjay38/istatus.svg" alt="license mit"></a>
 </div>
 
+<div align="center">
+<img src="https://raw.githubusercontent.com/mrityunjay38/iStatus/master/assets/istatus-alert.gif" alt="istatus alert gif"/>
+</div>
+
 ## Installation
 ```bash
 npm install istatus --save
