@@ -7,7 +7,7 @@
 
 ## Installation
 ```bash
-npm install iStatus --save
+npm install istatus --save
 ```
 
 ## Usage

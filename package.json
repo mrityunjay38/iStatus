@@ -1,6 +1,6 @@
 {
   "name": "istatus",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A plugin to beautify internet status alert.",
   "main": "build/istatus.min.js",
   "scripts": {
