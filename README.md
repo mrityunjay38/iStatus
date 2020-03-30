@@ -12,7 +12,7 @@
 </div>
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/mrityunjay38/iStatus/master/assets/istatus-alert.gif" alt="istatus alert gif"/>
+<img src="https://raw.githubusercontent.com/mrityunjay38/iStatus/develop/assets/istatus-alert.gif" alt="istatus alert gif"/>
 </div>
 
 ## Installation
