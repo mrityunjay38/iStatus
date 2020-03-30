@@ -1,19 +1,19 @@
-<div align="center">
+<p align="center">
   <a href="#">
     <img src="https://raw.githubusercontent.com/mrityunjay38/iStatus/master/assets/iStatus-logo.png">
   </a>
-</div>
+</p>
 <p align="center">A plugin to beautify internet status alert.</p>
 
-<div align="center">
+<p align="center">
 <a href="https://www.npmjs.com/package/istatus"><img src="https://img.shields.io/npm/v/istatus.svg" alt="npm istatus version"></a>
 <a href="https://www.jsdelivr.com/package/npm/istatus"><img src="https://data.jsdelivr.com/v1/package/npm/istatus/badge" alt="jsdelivr downloads"></a>
 <a href="https://github.com/mrityunjay38/iStatus/blob/master/LICENSE"><img src="https://img.shields.io/github/license/mrityunjay38/istatus.svg" alt="license mit"></a>
-</div>
+</p>
 
-<div align="center">
+<p align="center">
 <img src="https://raw.githubusercontent.com/mrityunjay38/iStatus/develop/assets/istatus-alert.gif" alt="istatus alert gif">
-</div>
+</p>
 
 ## Installation
 ```bash
@@ -28,7 +28,7 @@ yarn add istatus
 or use CDN
 
 ```javascript
-<script src="https://cdn.jsdelivr.net/npm/istatus@1.0.4/build/istatus.min.js">
+<script src="https://cdn.jsdelivr.net/npm/istatus@1.0.5/build/istatus.min.js">
 ```
 
 ## Usage
@@ -49,7 +49,7 @@ iStatus();
 
 ### Browsers
 ```javascript
-<script src='https://cdn.jsdelivr.net/npm/istatus@1.0.4/build/istatus.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/istatus@1.0.5/build/istatus.min.js'></script>
 
 <script>
     window.onload = function () {
